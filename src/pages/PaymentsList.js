@@ -40,7 +40,7 @@ export default function PaymentsList() {
   ];
 
   useEffect(() => {
-    HttpCall("api/payment/1", setPayments);
+    HttpCall("api/payments", setPayments);
   }, []);
 
   return (
