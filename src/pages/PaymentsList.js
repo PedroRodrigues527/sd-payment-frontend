@@ -17,7 +17,7 @@ export default function PaymentsList() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "paymentAmount",
+      field: "amount",
       headerName: "Valor monetário",
       width: 150,
       editable: true,
