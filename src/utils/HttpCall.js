@@ -41,10 +41,8 @@ export default function HttpCall(
       body: JSON.stringify(body),
     })
       .then((response) => {
-        
       })
       .catch((error) => {
-        
       });
   }
 }
