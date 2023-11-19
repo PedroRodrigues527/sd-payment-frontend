@@ -17,45 +17,25 @@ export default function PaymentsList() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "title",
-      headerName: "Título",
+      field: "paymentAmount",
+      headerName: "Valor monetário",
       width: 150,
       editable: true,
     },
     {
-      field: "author",
-      headerName: "Autores",
+      field: "information",
+      headerName: "information",
       width: 150,
       editable: true,
     },
     {
-      field: "content",
-      headerName: "Conteúdo",
-      width: 150,
-      editable: true,
-    },
-    {
-      field: "journal",
-      headerName: "Revista",
-      type: "number",
-      width: 110,
-      editable: true,
-    },
-    {
-      field: "editor",
-      headerName: "Editor",
-      type: "number",
-      width: 120,
-      editable: true,
-    },
-    {
-      field: "publication_date",
+      field: "expiredDate",
       headerName: "Data de Publicação",
       type: "number",
       width: 150,
       editable: true,
       valueGetter: (params) =>
-        `${params.row.publication_date ?? "Por publicar"}`,
+        `${params.row.expiredDate ?? "---"}`,
     },
   ];
 
