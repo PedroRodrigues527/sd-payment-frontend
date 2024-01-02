@@ -27,6 +27,7 @@ export default function HttpCall(
         "Content-Type": "application/json",
         Accept: "application/json",
       },
+      credentials: "include", // Enable cookies
     })
       .then((response) => response.json())
       .then((json) => {setHook(json); console.log(json)})
@@ -38,6 +39,7 @@ export default function HttpCall(
         "Content-Type": "application/json",
         Accept: "application/json",
       },
+      credentials: "include", // Enable cookies
       body: JSON.stringify(body),
     })
       .then((response) => {
