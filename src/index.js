@@ -6,6 +6,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './pages/Layout';
 import PaymentsList from './pages/PaymentsList';
+import PaymentCreate from './pages/PaymentCreate';
 
 function App(){
   return(
@@ -14,6 +15,7 @@ function App(){
         <Route path='/' element={<Layout />}>
           <Route index element={<PaymentsList />}/>
           <Route path='/login' element={<Login />}/>
+          <Route path='/payment-create' element={<PaymentCreate />}/>
         </Route>
       </Routes>
     </BrowserRouter>

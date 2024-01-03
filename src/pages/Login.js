@@ -16,7 +16,7 @@ export default function Login() {
   return (
     <div className="telaLogin">
       <form onSubmit={loginRequest}>
-        <div>Email:<br/><input type="text" id="email"></input></div>
+        <div>Username:<br/><input type="text" id="email"></input></div>
         <div>Password:<br/><input type="password" id="password"></input></div>
         <button type="submit" className="loginbtn">Entrar</button>
       </form>
