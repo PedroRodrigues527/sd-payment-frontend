@@ -15,7 +15,10 @@ export default function PaymentsList() {
   const [payments, setPayments] = useState(null);
 
   const columns = [
-    { field: "id", headerName: "ID", width: 90 },
+    { 
+      field: "id", 
+      headerName: "ID", 
+    },
     {
       field: "amount",
       headerName: "Valor monetário",
@@ -26,7 +29,6 @@ export default function PaymentsList() {
       field: "information",
       headerName: "information",
       width: 150,
-      editable: true,
     },
     {
       field: "expiredDate",

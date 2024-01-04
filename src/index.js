@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ArticlesList from "./pages/PaymentsList"
+import Login from "./pages/Login"
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from './pages/Layout';
+import PaymentsList from './pages/PaymentsList';
+import PaymentCreate from './pages/PaymentCreate';
 
-export default function App(){
+function App(){
   return(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<ArticlesList />}/>
+          <Route index element={<PaymentsList />}/>
+          <Route path='/login' element={<Login />}/>
+          <Route path='/payment-create' element={<PaymentCreate />}/>
         </Route>
       </Routes>
     </BrowserRouter>

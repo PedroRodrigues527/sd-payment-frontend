@@ -7,20 +7,18 @@ export default function Login() {
     let password = document.getElementById("password").value;
 
     let data = {
-      email: email,
+      username: email,
       password: password,
     };
     UseLogin(data);
   }
 
   return (
-    <div>
+    <div className="telaLogin">
       <form onSubmit={loginRequest}>
-        Email:<input type="email" id="email"></input>
-        <br></br>
-        Password<input type="password" id="password"></input>
-        <br></br>
-        <button type="submit">Entrar</button>
+        <div>Username:<br/><input type="text" id="email"></input></div>
+        <div>Password:<br/><input type="password" id="password"></input></div>
+        <button type="submit" className="loginbtn">Entrar</button>
       </form>
     </div>
   );

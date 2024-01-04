@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(79deg, #fcfced, #fcedfc 48%, #ebf6ff);
+}
+ul {
+  list-style-type: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.telaLogin{
+  display: grid;
+  place-items: center;
+}
+
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+button {
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+form{
+  display: grid;
+  place-items: center;
+}
+
+.loginbtn{
+  margin-top: 10px;
+}
+
+.menuNavegacao{
+  background-color: #490688;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  height: 50px;
+  align-items: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
