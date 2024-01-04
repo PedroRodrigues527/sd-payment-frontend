@@ -13,7 +13,7 @@ export default function PaymentCreate() {
       expirationDate: expirationDate,
     };
     
-    HttpCall("api/payment", null, "POST", data);
+    HttpCall("api/payments", null, "POST", data);
   }
 
   return (
